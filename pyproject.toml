@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "victor-skill-kernel"
+version = "0.1.0"
+description = "Deterministic skill audit, routing, governance, and capability graph kernel for Victor."
+requires-python = ">=3.11"
+authors = [{name = "Massive Magnetics"}]
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+victor-skills = "victor_skill_kernel.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["victor_skill_kernel*"]
