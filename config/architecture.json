@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "lifecycle": ["generated", "validated", "tested", "trusted", "active", "deprecated", "retired"],
+  "authority_order": ["constitution", "governance", "auditor", "orchestrator", "builder", "specialist", "generated"],
+  "closed_loop": [
+    "state", "need", "capability_specification", "skill_compilation", "implementation", "verification", "registration", "reuse"
+  ],
+  "merge_policy": {
+    "pair_score_threshold": 0.52,
+    "preserve_specialists": true,
+    "generator_must_not_audit_itself": true,
+    "generated_does_not_imply_trusted": true
+  }
+}
